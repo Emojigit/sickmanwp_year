@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import datetime, os, time, subprocess
+import datetime, os, time, subprocess, sys
 try:
     import pytz
 except ModuleNotFoundError:
