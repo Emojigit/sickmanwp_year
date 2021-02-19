@@ -9,3 +9,8 @@ print("start:",fyear)
 for a in pandas.date_range(fyear,nyear,freq='12h'):
     print("earth:",a,"SickManWP:",((a - fyear)/oyear))
 
+now = pandas.to_datetime("now")
+print("---------------")
+# Requested by sunny00217wm, https://t.me/SickManWPfriends/44894
+print("Now earth year:",now)
+print("Now dragging year:",((now - fyear)/oyear))
