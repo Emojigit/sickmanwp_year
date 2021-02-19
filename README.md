@@ -1,4 +1,4 @@
-# sickmanwp_tear
+# sickmanwp_year
 get sickmanwp dragging year data
 ## License
     Copyright (C) 2021 Cato Yiu
