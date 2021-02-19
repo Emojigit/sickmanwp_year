@@ -1,5 +1,19 @@
 #!/usr/bin/env python3
-import datetime, pytz, os, time, pandas
+import datetime, os, time
+try:
+    import pytz
+except ModuleNotFoundError:
+    print("Installing required depends: pytz")
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pytz'])
+    import pytz
+
+try:
+    import pandas
+except ModuleNotFoundError:
+    print("Installing required depends: pandas")
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pandas'])
+    import pandas
+
 os.environ['TZ'] = 'UTC'
 time.tzset()
 fyear = datetime.datetime(2019,7,4,12,0)# 2019年7月4日下午12：00
